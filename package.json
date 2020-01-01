@@ -1,7 +1,7 @@
 {
-  "name": "shogan",
+  "name": "Shogan",
   "version": "0.3.0",
-  "description": "shogan",
+  "description": "Shogan",
   "engines": {
     "node": "12.x"
   },
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "request": "^2.81.0",
