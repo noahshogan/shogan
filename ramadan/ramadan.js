@@ -13,10 +13,10 @@ let options = {
 
 
 module.exports = {
-    ramadan: function () {
+    ramadan: new Promise(function (resolve, reject) {
         request(options, function (error, response, body) {
             if (error) throw new Error(error);
-            return body
+            resolve(body)
         })
-    }
+    })
 };

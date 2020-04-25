@@ -25,10 +25,22 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ramadan', function (req, res) {
-    tools.ramadan(function (ans) {
-        res.send(  ans );
-    });
+    typeof tools.ramadan.then(value => {
+        let body = JSON.parse(value).data.timings.Maghrib;
+        let formatDate1 = formatDate(body);
+        return res.send(formatDate1);
+        }
+    );
+    // tools.ramadan(function (ans) {
+    //     res.send(  ans );
+    // });
 });
+
+function formatDate(date) {
+    let hours = date.split(":")[0];
+    let minutes = parseInt(date.split(":")[1])+5;
+    return hours + ':' + minutes;
+}
 
 function mysql() {
     return new Promise(function (resolve, reject) {
