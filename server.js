@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
+let tools = require('./ramadan/ramadan');
 
 const winston = require('winston');
 
@@ -21,6 +22,12 @@ app.get('/', function (req, res) {
         res.send('Hi,' + ans + ' you are visitore number ' + counter);
     });
     logger.info("{" + counter + "}");
+});
+
+app.get('/ramadan', function (req, res) {
+    tools.ramadan(function (ans) {
+        res.send(  ans );
+    });
 });
 
 function mysql() {
