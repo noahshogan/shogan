@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "mongodb": "^3.4.1",
-    "request": "^2.81.0",
+    "request": "2.88.0",
     "tape": "^4.7.0"
   },
   "repository": {
