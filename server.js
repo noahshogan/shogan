@@ -25,7 +25,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ramadan', function (req, res) {
-    typeof tools.ramadan.then(value => {
+    typeof tools.ramadan2.then(value => {
         let body = JSON.parse(value).data.timings.Maghrib;
         let formatDate1 = formatDate(body);
         return res.send(formatDate1);
