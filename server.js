@@ -1,4 +1,5 @@
 const express = require('express');
+const url = require('url') ;
 const app = express();
 const port = process.env.PORT || 5000;
 let tools = require('./ramadan/ramadan');
@@ -19,9 +20,9 @@ let counter = 0;
 
 app.get('/', function (req, res) {
     mysql().then(function (ans) {
-        res.send('Hi,' + ans + ' you are visitore number ' + counter);
+        res.send('Hi, there! you are visitor number:' + counter +'<br/> Please proccede to ' + req.protocol+'://'+req.headers.host+'/ramadan' );
     });
-    logger.info("{" + counter + "}");
+    // logger.info("{" + counter + "}");
 });
 
 app.get('/ramadan', function (req, res) {
