@@ -29,7 +29,7 @@ app.get('/ramadan', function (req, res) {
     typeof tools.ramadan2.then(value => {
         let body = JSON.parse(value).data.timings.Maghrib;
         let formatDate1 = formatDate(body);
-        return res.send(formatDate1);
+        return res.send('<h1 style=font-size:100px>'+formatDate1+'</h1>');
         }
     );
     // tools.ramadan(function (ans) {
