@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        $(document).ready(function () {
+            $.ajax({
+                url: 'https://shogan.herokuapp.com/ramadan',
+            }).done(function (data) {
+                $('#monitor_data').append(JSON.stringify(data))
+            });
+        })
+    </script>
+</head>
+<body>
+
+<div id="monitor_data"></div>
+</body>
+</html>

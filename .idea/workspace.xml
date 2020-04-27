@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e0df6604-cff0-4f4e-b893-e42bbd36aa3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/combined.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ramadan/ramadan.js" beforeDir="false" afterPath="$PROJECT_DIR$/ramadan/ramadan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -12,6 +29,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -40,6 +65,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shoganGit/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -50,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587932807482</updated>
-      <workItem from="1587932810599" duration="4924000" />
+      <workItem from="1587932810599" duration="13673000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1587934968690</created>
@@ -59,28 +94,73 @@
       <option name="project" value="LOCAL" />
       <updated>1587934968690</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="push">
+      <created>1587943543238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587943543238</updated>
+    </task>
+    <task id="LOCAL-00003" summary="make time bigger">
+      <created>1587979945712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587979945712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="make time bigger">
+      <created>1587981258427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587981258427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="push" />
-    <option name="LAST_COMMIT_MESSAGE" value="push" />
+    <MESSAGE value="make time bigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="make time bigger" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="207" y="0" key="CommitChangelistDialog2" timestamp="1587934966019">
-      <screen x="69" y="0" width="1028" height="617" />
+    <state x="1094" y="276" key="#HTTP_Proxy" timestamp="1587973247299">
+      <screen x="69" y="0" width="2491" height="1080" />
     </state>
+    <state x="1094" y="276" key="#HTTP_Proxy/4519.0.1058.617/2560.0.1920.1080/69.0.2491.1080@69.0.2491.1080" timestamp="1587973247299" />
+    <state x="403" y="0" key="CommitChangelistDialog2" timestamp="1587981256000">
+      <screen x="69" y="0" width="2491" height="1080" />
+    </state>
+    <state x="403" y="0" key="CommitChangelistDialog2/4519.0.1058.617/2560.0.1920.1080/69.0.2491.1080@69.0.2491.1080" timestamp="1587981256000" />
     <state x="207" y="0" key="CommitChangelistDialog2/69.0.1028.617@69.0.1028.617" timestamp="1587934966019" />
     <state x="162" y="93" width="842" height="431" key="DiffContextDialog" timestamp="1587935479394">
       <screen x="69" y="0" width="1028" height="617" />
     </state>
     <state x="162" y="93" width="842" height="431" key="DiffContextDialog/69.0.1028.617@69.0.1028.617" timestamp="1587935479394" />
-    <state x="176" y="0" key="Vcs.Push.Dialog.v2" timestamp="1587934971043">
+    <state x="424" y="11" key="RollbackChangesDialog" timestamp="1588021080622">
       <screen x="69" y="0" width="1028" height="617" />
     </state>
+    <state x="424" y="11" key="RollbackChangesDialog/69.0.1028.617@69.0.1028.617" timestamp="1588021080622" />
+    <state x="328" y="0" key="Vcs.Push.Dialog.v2" timestamp="1587981267016">
+      <screen x="69" y="0" width="2491" height="1080" />
+    </state>
+    <state x="328" y="0" key="Vcs.Push.Dialog.v2/4519.0.1058.617/2560.0.1920.1080/69.0.2491.1080@69.0.2491.1080" timestamp="1587981267016" />
     <state x="176" y="0" key="Vcs.Push.Dialog.v2/69.0.1028.617@69.0.1028.617" timestamp="1587934971043" />
     <state x="295" y="43" width="576" height="530" key="find.popup" timestamp="1587939987008">
       <screen x="69" y="0" width="1028" height="617" />

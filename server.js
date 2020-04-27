@@ -19,19 +19,16 @@ const logger = winston.createLogger({
 let counter = 0;
 
 app.get('/', function (req, res) {
-    mysql().then(function (ans) {
-        res.send('Hi, there! you are visitor number:' + counter + '<br/> Please proccede to ' + req.protocol + '://' + req.headers.host + '/ramadan');
-    });
-    // logger.info("{" + counter + "}");
+    res.send('Hi, there! you are visitor number:' + counter + '<br/> Please proceed to <a href="' + req.protocol + '://' + req.headers.host + '/ramadan' + '" >here</a>');
 });
 
 app.get('/ramadan', function (req, res) {
-    typeof tools.ramadan2.then(value => {
+    typeof tools.ramadan.then(value => {
             let body = JSON.parse(value).data.timings.Maghrib;
             let formatDate1 = formatDate(body);
             return res.send(
                 '<head>\n' +
-                '    <title></title>\n' +
+                '    <title>I Want To Eat!</title>\n' +
                 '    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n' +
                 '    <style type="text/css">\n' +
                 '        html, body {\n' +
@@ -55,7 +52,7 @@ app.get('/ramadan', function (req, res) {
 
 function formatDate(date) {
     let hours = date.split(":")[0];
-    let minutes = parseInt(date.split(":")[1]) + 6;
+    let minutes = parseInt(date.split(":")[1]) + 5;
     return hours + ':' + minutes;
 }
 
@@ -74,7 +71,6 @@ function mysql() {
             console.log("Connected!");
             let sql = "select * from shogan;";
             con.query(sql, function (err, result) {
-                // if (err) throw err;
                 console.log("Result: " + result[0].name);
                 resolve(result[0].name);
             });
