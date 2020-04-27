@@ -1,5 +1,5 @@
 const express = require('express');
-const url = require('url') ;
+const url = require('url');
 const app = express();
 const port = process.env.PORT || 5000;
 let tools = require('./ramadan/ramadan');
@@ -20,26 +20,42 @@ let counter = 0;
 
 app.get('/', function (req, res) {
     mysql().then(function (ans) {
-        res.send('Hi, there! you are visitor number:' + counter +'<br/> Please proccede to ' + req.protocol+'://'+req.headers.host+'/ramadan' );
+        res.send('Hi, there! you are visitor number:' + counter + '<br/> Please proccede to ' + req.protocol + '://' + req.headers.host + '/ramadan');
     });
     // logger.info("{" + counter + "}");
 });
 
 app.get('/ramadan', function (req, res) {
     typeof tools.ramadan2.then(value => {
-        let body = JSON.parse(value).data.timings.Maghrib;
-        let formatDate1 = formatDate(body);
-        return res.send('<h1 style=font-size:100px>'+formatDate1+'</h1>');
+            let body = JSON.parse(value).data.timings.Maghrib;
+            let formatDate1 = formatDate(body);
+            return res.send(
+                '<head>\n' +
+                '    <title></title>\n' +
+                '    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n' +
+                '    <style type="text/css">\n' +
+                '        html, body {\n' +
+                '            height: 100%;\n' +
+                '            margin: 0;\n' +
+                '        }\n' +
+                '\n' +
+                '        #wrapper {\n' +
+                '            min-height: 100%; \n' +
+                '        }\n' +
+                '    </style>\n' +
+                '</head>\n' +
+                '\n' +
+                '<body>\n' +
+                '    <div style="text-align: center;height: 100%;width: 100%;"><h1 style="height: 100%;width: 100%;text-align:center;font-size: 300px">' + formatDate1 + '</h1></div>\n' +
+                '</body>'
+            );
         }
     );
-    // tools.ramadan(function (ans) {
-    //     res.send(  ans );
-    // });
 });
 
 function formatDate(date) {
     let hours = date.split(":")[0];
-    let minutes = parseInt(date.split(":")[1])+6;
+    let minutes = parseInt(date.split(":")[1]) + 6;
     return hours + ':' + minutes;
 }
 
