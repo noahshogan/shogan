@@ -52,7 +52,7 @@ app.get('/ramadan', function (req, res) {
 
 function formatDate(date) {
     let hours = date.split(":")[0];
-    let minutes = parseInt(date.split(":")[1]) + 5;
+    let minutes = parseInt(date.split(":")[1]) + 6;
     return hours + ':' + minutes;
 }
 
